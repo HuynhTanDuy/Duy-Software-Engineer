@@ -1,6 +1,6 @@
 # Các nguyên lý SOLID trong OOP
 
-![](images/clean_code.png)
+![](images/SOLID.jpg)
 
 SOLID là viết tắt các các nguyên lý:
 - Single responsibility
