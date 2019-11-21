@@ -1,4 +1,7 @@
 # Các nguyên lý SOLID trong OOP
+
+![](images/clean_code.png)
+
 SOLID là viết tắt các các nguyên lý:
 - Single responsibility
 - Open/ closed
@@ -8,21 +11,21 @@ SOLID là viết tắt các các nguyên lý:
 Đây là các nguyên lý được đúc kết bởi kinh nghiệm của vô số developer, qua hàng ngàn dự án thành công và thất bại. Nắm vững và áp dụng những nguyên lý này sẽ giúp cho code dễ đọc, dễ scale, dễ bảo trì, dễ test hơn.
 
 1. __Single responsibility Principle__
-Nội dung nguyên lý: 
-	```
-		Một class chỉ nên giữ 1 trách nhiệm duy nhất.
-	```
-Tuân thủ nguyên lý này sẽ giúp cho việc bảo trì code ( do thay đổi về yêu cầu chẳng hạn), test sẽ tốt hơn.
+	- Nội dung nguyên lý: 
+		```
+			Một class chỉ nên giữ 1 trách nhiệm duy nhất.
+		```
+	Tuân thủ nguyên lý này sẽ giúp cho việc bảo trì code ( do thay đổi về yêu cầu chẳng hạn), test sẽ tốt hơn.
 
 2.	__Open/ Closed Principle__
-Nội dung nguyên lý:
-	```
-		Có thể thoải mái mở rộng 1 class, nhưng không được (hạn chế) sửa đổi bên trong class đó.( Open for extension but closed for modification).
-	```
-Khi làm chức năng mới, ta nên viết class mới mở rộng class cũ ( bằng kế thừa hoặc sở hữu class cũ) chứ không nên chỉnh sửa class cũ. Điều này sẽ đảm bảo cho việc mở rộng chức năng chương trình không ảnh hưởng đến các chức năng đã viết trước đó.
+	- Nội dung nguyên lý:
+		```
+			Có thể thoải mái mở rộng 1 class, nhưng không được (hạn chế) sửa đổi bên trong class đó.( Open for extension but closed for modification).
+		```
+	Khi làm chức năng mới, ta nên viết class mới mở rộng class cũ ( bằng kế thừa hoặc sở hữu class cũ) chứ không nên chỉnh sửa class cũ. Điều này sẽ đảm bảo cho việc mở rộng chức năng chương trình không ảnh hưởng đến các chức năng đã viết trước đó.
 
 3.	__Liskov Substitution Principle__
-Nội dung nguyên lý:
+	- Nội dung nguyên lý:
 	```
 		Trong 1 chương trình, các object của class con có thể thay thế class cha mà không thay đổi tính đúng đắn của chương trình.
 	```
@@ -35,14 +38,14 @@ Nội dung nguyên lý:
 
 
 4.	 __Interface Segregation Principle__
-Nội dung nguyên lý:
+	- Nội dung nguyên lý:
 	```
 		Thay vì dùng 1 interface lớn, ta nên tách biệt thành nhiều interface nhỏ, với các mục đích cụ thể.
 	```	
 	Điều này sẽ giúp cho việc implement một interface trở nên dễ dàng hơn. Tưởng tượng 1 interface có 100 method và mỗi khi implement bằng 1 class ta phải triển khai cho 100 method đó, trong khi mục đích của ta là chỉ sử dụng một vài method.
 
 5.	__Dependency Inversion Principle__
-Nội dung nguyên lý:
+	- Nội dung nguyên lý:
 	```
 		Các module cấp cao không nên phụ thuộc vào các module cấp thấp. Cả hai nên phụ thuộc vào một trung gian là abstraction ( interface)
 		Interface không nên phụ thuộc vào implemention, mà ngược lại ( Các class giao tiếp với nhau thông qua interface, không phải thông qua implemention)
