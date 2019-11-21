@@ -44,7 +44,7 @@
     	- Thêm một lớp bảo mật nữa cho hệ thống. 
         API gateway giúp ngăn chặn các cuộc tấn công bằng cách thêm một lớp bảo vệ các loại tấn công như ddos, slq injections,... 
 
-    __Nhược điểm của API Gateway__ 
+    __Nhược điểm của API Gateway__  
     	- Tăng thời gian response. 
     	- Thêm tác nhân gây lỗi. 
     	- Có thể gây nghẽn cổ chai: Nếu như không được scale hay config hợp lý thì gateway sẽ có thể bị quá tải và làm chậm hệ thống của chúng ta. 
