@@ -9,7 +9,7 @@
 - Một đoạn code "clean" phải hiệu quả, dễ đọc, đơn giản, rõ ràng, không bị trùng lặp, không chứa các thao tác dư thừa, có khả năng tái sử dụng khi cần thiết.
 - Clean Code có vai trò cực kì quan trọng đối với dự án, giúp dự án phát triển nhanh hơn, bảo trì dễ dàng hơn, tránh lãng phí thời gian và công sức của team.
 
-2. __Một số điểm chính trong sách Clean Code- Robert C.Martin
+2. __Một số điểm chính trong sách Clean Code- Robert C.Martin__
 - __Meaningful Names__
 	- Các class, biến, phương thức phải được đặt tên một cách có nghĩa, dễ hiểu, thể hiện chính xác vai trò và mục đích sử dụng của nó.
 		Bad:
