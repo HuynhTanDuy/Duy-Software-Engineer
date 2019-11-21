@@ -3,7 +3,7 @@
 ![](images/microservices.png)
 
 1.	__Microservices là gì ?__ 
-- Microservices là một kiến trúc phần mềm, trong đó phần mềm được chia nhỏ thành các services có đặc điểm
+   Microservices là một kiến trúc phần mềm, trong đó phần mềm được chia nhỏ thành các services có đặc điểm
 	- Dễ bảo trì và test.
 	- Không bị ràng buộc chặt với nhau.
 	- Mỗi services tập trung vào 1 nhiệm vụ duy nhất.
@@ -12,16 +12,16 @@
 	- Giao tiếp với nhau để thực hiện vai trò của phần mềm.
 
 2. __Ưu và nhược điểm__ 
-- Ưu điểm: 
-	- Dễ nâng cấp và mở rộng.
-	- Khi một service bị lỗi, hệ thống vẫn hoạt động bình thường. Với monolith, một module lỗi có thể kéo theo sự sụp đổ của toàn bộ hệ thống
-	- Linh hoạt trong việc sử dụng ngôn ngữ lập trình, database, công nghệ mới. Ví dụ như service xử lý ảnh có thể dùng C++, service tổng hợp data có thể viết bằng python => tăng hiệu suất phần mềm.
-	- Các công việc Devops sẽ trở nên dễ dàng hơn.
-	- Có thể chia team thành các team nhỏ hơn để chịu trách nhiệm cho các service.
-- Nhược điểm:
-	- Các Module giao tiếp qua mạng nên tốc độ sẽ chậm hơn so với Monolith.
-	- Không đảm bảo tính nhất quán về dữ liệu.
-	- Yêu cầu sẽ cao hơn đối với đội ngũ phát triển vì độ phức tạp của Microservices dĩ nhiên là cao hơn so với Monolith.
+   - Ưu điểm: 
+	   - Dễ nâng cấp và mở rộng.
+	   - Khi một service bị lỗi, hệ thống vẫn hoạt động bình thường. Với monolith, một module lỗi có thể kéo theo sự sụp đổ của toàn bộ hệ thống
+	   - Linh hoạt trong việc sử dụng ngôn ngữ lập trình, database, công nghệ mới. Ví dụ như service xử lý ảnh có thể dùng C++, service tổng hợp data có thể viết bằng python => tăng hiệu suất phần mềm.
+	   - Các công việc Devops sẽ trở nên dễ dàng hơn.
+	   - Có thể chia team thành các team nhỏ hơn để chịu trách nhiệm cho các service.
+   - Nhược điểm:
+	   - Các Module giao tiếp qua mạng nên tốc độ sẽ chậm hơn so với Monolith.
+	   - Không đảm bảo tính nhất quán về dữ liệu.
+	   - Yêu cầu sẽ cao hơn đối với đội ngũ phát triển vì độ phức tạp của Microservices dĩ nhiên là cao hơn so với Monolith.
 
 3. __Một số mô hình phát triển Microservices.__ 
 	- Dùng Restful thuần túy, sử dụng format JSON (hoặc Protobuf, Avro…). Các service gọi service khác đồng bộ hoặc bất đồng bộ. 
@@ -33,22 +33,22 @@
     => API Gateway ra đời để giải quyết những vấn đề đó.
     - API Gateway có thể coi là một cổng trung gian, nó là cổng vào duy nhất tới hệ thống microservices. API Gateway che giấu đi thông tin kiến trúc hệ thống nội bộ và nó cung cấp các API tùy chỉnh cho mỗi Client. Cổng kết nối API còn có trách nhiệm xác thực, giám sát, cân bằng tải, caching, định hình yêu cầu và quản lí thông tin, xử lí phản hồi tĩnh.
 
-    ![](images/api_gateway.png)
+       ![](images/api_gateway.png)
 
-    __Tính năng của API Gateway__
-    	- Tối ưu đầu cuối: Khi một request của Client tới dịch vụ yêu cầu thông tin của nhiều thành phần trong hệ thống, ví dụ: Customer, Order, Invoices... API Gateway sẽ thực hiện request đồng thời tới các thành phần, lấy về các thông tin từ từng thành phần, ghép lại và phản hồi lại kết quả mong muốn cho Client => giải quyết vấn đề không đồng nhất.
-    	- Che dấu được cấu trúc của hệ thống microservices với bên ngoài.
+    __Tính năng của API Gateway__ 
+    	- Tối ưu đầu cuối: Khi một request của Client tới dịch vụ yêu cầu thông tin của nhiều thành phần trong hệ thống, ví dụ: Customer, Order, Invoices... API Gateway sẽ thực hiện request đồng thời tới các thành phần, lấy về các thông tin từ từng thành phần, ghép lại và phản hồi lại kết quả mong muốn cho Client => giải quyết vấn đề không đồng nhất. 
+    	- Che dấu được cấu trúc của hệ thống microservices với bên ngoài. 
     	- Dễ dàng theo dõi và quản lý traffic: Hầu hết các hệ thống API gateway phổ biến hiện nay đều sẽ đi kèm tính năng theo dõi và quản lý lượng traffic bằng GUI hoặc thông qua các APIs của hệ thống Gateway, VD như với Kong (bản EE). 
-    	![](images/api_gateway.png)
+    	![](images/api_gateway.png) 
     	- Ngắt kết nối API: Khi mỗi thành phần trong hệ thống dừng hoạt động, hoặc trả về số lượng lớn lỗi đạt đến ngưỡng đã được quy định, API Gateway có thể tự động thực hiện dừng gửi request tới thành phần gặp lỗi. Việc này sẽ cho đội vận hành có thời gian để phân tích log, xử lý lỗi và update lại thành phần. 
-    	- Thêm một lớp bảo mật nữa cho hệ thống.
-        API gateway giúp ngăn chặn các cuộc tấn công bằng cách thêm một lớp bảo vệ các loại tấn công như ddos, slq injections,...
+    	- Thêm một lớp bảo mật nữa cho hệ thống. 
+        API gateway giúp ngăn chặn các cuộc tấn công bằng cách thêm một lớp bảo vệ các loại tấn công như ddos, slq injections,... 
 
-    __Nhược điểm của API Gateway__
-    	- Tăng thời gian response.
-    	- Thêm tác nhân gây lỗi.
-    	- Có thể gây nghẽn cổ chai: Nếu như không được scale hay config hợp lý thì gateway sẽ có thể bị quá tải và làm chậm hệ thống của chúng ta.
-    	- Tốn thêm chi phí.
+    __Nhược điểm của API Gateway__ 
+    	- Tăng thời gian response. 
+    	- Thêm tác nhân gây lỗi. 
+    	- Có thể gây nghẽn cổ chai: Nếu như không được scale hay config hợp lý thì gateway sẽ có thể bị quá tải và làm chậm hệ thống của chúng ta. 
+    	- Tốn thêm chi phí. 
 
 Updating...
 
