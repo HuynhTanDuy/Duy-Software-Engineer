@@ -90,6 +90,10 @@
 
 	![](images/PSR-2.png)
 
-Updating...	
+Updating...
+
+# References
+- Clean Code - A Handle of Agile Software Craftsmanship - Robert C.Martin
+- https://www.php-fig.org/psr/	
 
 
