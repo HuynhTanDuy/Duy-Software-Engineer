@@ -1,4 +1,4 @@
-#Clean Code
+# Clean Code
 
 > Tầm quan trọng và một số quy tắc để giúp code "clean".
 
@@ -10,7 +10,7 @@
 - Clean Code có vai trò cực kì quan trọng đối với dự án, giúp dự án phát triển nhanh hơn, bảo trì dễ dàng hơn, tránh lãng phí thời gian và công sức của team.
 
 2. __Một số điểm chính trong sách Clean Code- Robert C.Martin
-- Meaningful Names
+- Meaningful Names__
 	- Các class, biến, phương thức phải được đặt tên một cách có nghĩa, dễ hiểu, thể hiện chính xác vai trò và mục đích sử dụng của nó.
 		Bad:
 		```
@@ -33,7 +33,7 @@
 			Const PUBLIC =1,PRIVATE=2;
 			if (Course->type== PUBLIC) then continue; 
 		``` 
-- Functions
+- __Functions__
 	- Functions truyền tải chính xác thông điệp về vai trò và mục đích của nó
 	- Mỗi phương thức chỉ nên thực hiện 1 công việc duy nhất.
 	- Một phương thức không nên quá dài.
@@ -72,7 +72,7 @@
 			} 
 		```
 	- Các phương thức nên trả về một cái gì đó ( kết quả, giá trị, ...)
-- Comments
+- __Comments__
 	- Hãy viết code một cách clean, để chính nó giải thích rõ ràng về những gì mà nó làm. Thay vì viết một đoạn code tồi và sử dụng comments để chữa cháy.
 	- Comments chỉ nên được sử dụng để giải thích, thể hiện những gì mà code không thể hiện rõ ràng được.
 
@@ -81,7 +81,7 @@ __PSR-1 Basic Coding Standard__
 	- Tên lớp PHẢI có dạng NameClass (not nameclass, Nameclass, namClass …)
 	- Tên phương thức của lớp PHẢI ở dạng doSomething.
 	- Hằng PHẢI viết hoa, phân tách với dấu _ ( IS_PUBLIC)
-2. PSR-2 Coding Style Guide	
+__PSR-2 Coding Style Guide__	
 	- Code sử dụng 4 kí tự space để lùi khối
 	- Mỗi dòng code PHẢI dưới 120 kí tự, NÊN dưới 80 kí tự.
 	- Ký tự "{" và "}" cho Class và Function phải ở dòng tiếp theo
