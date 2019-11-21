@@ -10,7 +10,7 @@
 - Clean Code có vai trò cực kì quan trọng đối với dự án, giúp dự án phát triển nhanh hơn, bảo trì dễ dàng hơn, tránh lãng phí thời gian và công sức của team.
 
 2. __Một số điểm chính trong sách Clean Code- Robert C.Martin
-- Meaningful Names__
+- __Meaningful Names__
 	- Các class, biến, phương thức phải được đặt tên một cách có nghĩa, dễ hiểu, thể hiện chính xác vai trò và mục đích sử dụng của nó.
 		Bad:
 		```
@@ -77,11 +77,11 @@
 	- Comments chỉ nên được sử dụng để giải thích, thể hiện những gì mà code không thể hiện rõ ràng được.
 
 3. __PHP Standards Recommendations__
-__PSR-1 Basic Coding Standard__
+- __PSR-1 Basic Coding Standard__
 	- Tên lớp PHẢI có dạng NameClass (not nameclass, Nameclass, namClass …)
 	- Tên phương thức của lớp PHẢI ở dạng doSomething.
 	- Hằng PHẢI viết hoa, phân tách với dấu _ ( IS_PUBLIC)
-__PSR-2 Coding Style Guide__	
+- __PSR-2 Coding Style Guide__	
 	- Code sử dụng 4 kí tự space để lùi khối
 	- Mỗi dòng code PHẢI dưới 120 kí tự, NÊN dưới 80 kí tự.
 	- Ký tự "{" và "}" cho Class và Function phải ở dòng tiếp theo
