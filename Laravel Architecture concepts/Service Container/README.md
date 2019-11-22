@@ -60,6 +60,10 @@
     - Sau khi thực hiện Interface binding, trong constructor của một class nào đó ta có thể type-hint theo interface. Đây là một ứng dụng được phổ biến rộng rãi trong các project Laravel. Bằng cách này, ta follow theo nguyên tắc  __"program to an interface, not an implementation"!__, thực hiện dependency injection thông qua các interface. Điều này sẽ giúp ta giảm sự ràng buộc giữa các class so với việc inject bằng implemention. 
     - Hãy tưởng tượng, bạn inject implemention "Mailgun" vào class "UserController" để thực hiện việc gửi mail, sau này nếu có yêu cầu thay đổi service gửi mail sang AWS Mailer, bạn sẽ phải vào class "UserController" để thay đổi cho phù hợp với implemention mới. Trong khi đó, nếu áp dụng Interface binding, đăng ký 1 interface 'Mailer' và thực hiện dependency inject thông qua nó, khi có thay đổi bạn chỉ cần thay đổi implemention của interface 'Mailer' mà thôi. __KHÔNG CẦN CHỈNH SỬA__ gì ở "UserController" cả. 
 
+# References 
+- https://laravel.com/docs/6.x/container  
+- https://viblo.asia/p/laravel-beauty-tim-hieu-ve-service-container-3KbvZ1wLGmWB  
+
 
 
 
