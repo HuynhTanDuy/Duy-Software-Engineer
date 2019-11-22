@@ -27,7 +27,7 @@
     $computer = app('Computer');
     ```
 
-    Quy trình thực hiện: 
+    __Quy trình thực hiện:__   
     	- Khởi tạo class Computer với các dependency của nó.
     	- *app()->bind('computer', 'Computer');* => đăng ký instance của class Computer bằng cái tên 'computer'
     	- *$computer = app('computer');* . Đây là lúc ta resolve instance của class Computer đã đăng ký với Service Container trước đó.
