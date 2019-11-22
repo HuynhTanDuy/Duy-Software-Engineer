@@ -28,10 +28,10 @@
     ```
 
     __Quy trình thực hiện:__   
-    	- Khởi tạo class Computer với các dependency của nó.
-    	- *app()->bind('computer', 'Computer');* => đăng ký instance của class Computer bằng cái tên 'computer'
-    	- *$computer = app('computer');* . Đây là lúc ta resolve instance của class Computer đã đăng ký với Service Container trước đó.
-    	- *$computer = app('Computer');*. Một minh chứng cho thấy sự mạnh mẽ của Service Container. Trong trường hợp này, Container sẽ kiểm tra xem đã có cái gì được đăng ký với tên 'Computer' hay chưa. Nếu chưa, nó sẽ xác định 'Computer' là tên class và tiến hành resolve instance từ class Computer.
+    	- Khởi tạo class Computer với các dependency của nó.  
+    	- *app()->bind('computer', 'Computer');* => đăng ký instance của class Computer bằng cái tên 'computer'.  
+    	- *$computer = app('computer');* . Đây là lúc ta resolve instance của class Computer đã đăng ký với Service Container trước đó.  
+    	- *$computer = app('Computer');*. Một minh chứng cho thấy sự mạnh mẽ của Service Container. Trong trường hợp này, Container sẽ kiểm tra xem đã có cái gì được đăng ký với tên 'Computer' hay chưa. Nếu chưa, nó sẽ xác định 'Computer' là tên class và tiến hành resolve instance từ class Computer.    
     Dễ dàng nhận thấy, ta không cần phải truyền bất cứ callback nào vào hàm bind cả. Thậm chí ta còn có thể gọi thẳng app('Computer') để khởi tạo ra một instance của Computer mà không cần bind gì hết, không cần khởi tạo dependency, không cần inject cái gì cả ! Service Container thực sự là 1 công cụ mạnh mẽ giúp ta thực hiện dependency injection 1 cách hiệu quả, nhanh chóng, chính xác.
 
 3. __Các cách thức Binding__  
