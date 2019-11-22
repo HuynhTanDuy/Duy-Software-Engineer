@@ -4,7 +4,7 @@
 
 1. __Khái niệm__  
   
-  Facades cung cấp một 'interface' của các class được đăng ký ở Service Container, cho phép bạn truy cập vào các hàm bên trong các class này thông qua các hàm *static*. Tất cả các Facades của Laravel được định nghĩa trong *Illuminate\Support\Facades* , ta có thể dễ dàng truy cập vào facades như sau:  
+  Facades cung cấp một 'giao diện' của các class được đăng ký ở Service Container, cho phép bạn truy cập vào các hàm bên trong các class này thông qua các hàm *static*. Tất cả các Facades của Laravel được định nghĩa trong *Illuminate\Support\Facades* , ta có thể dễ dàng truy cập vào facades như sau:  
   ```
   use Illuminate\Support\Facades\Cache;
 
