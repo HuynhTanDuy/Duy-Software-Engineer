@@ -35,14 +35,14 @@
 
        ![](images/api_gateway.png)
 
-    __Tính năng của API Gateway__ 
-    	- Tối ưu đầu cuối: Khi một request của Client tới dịch vụ yêu cầu thông tin của nhiều thành phần trong hệ thống, ví dụ: Customer, Order, Invoices... API Gateway sẽ thực hiện request đồng thời tới các thành phần, lấy về các thông tin từ từng thành phần, ghép lại và phản hồi lại kết quả mong muốn cho Client => giải quyết vấn đề không đồng nhất. 
-    	- Che dấu được cấu trúc của hệ thống microservices với bên ngoài. 
-    	- Dễ dàng theo dõi và quản lý traffic: Hầu hết các hệ thống API gateway phổ biến hiện nay đều sẽ đi kèm tính năng theo dõi và quản lý lượng traffic bằng GUI hoặc thông qua các APIs của hệ thống Gateway, VD như với Kong (bản EE). 
-    	![](images/Kong.png) 
-    	- Ngắt kết nối API: Khi mỗi thành phần trong hệ thống dừng hoạt động, hoặc trả về số lượng lớn lỗi đạt đến ngưỡng đã được quy định, API Gateway có thể tự động thực hiện dừng gửi request tới thành phần gặp lỗi. Việc này sẽ cho đội vận hành có thời gian để phân tích log, xử lý lỗi và update lại thành phần. 
+    -__Tính năng của API Gateway__   
+    	- Tối ưu đầu cuối: Khi một request của Client tới dịch vụ yêu cầu thông tin của nhiều thành phần trong hệ thống, ví dụ: Customer, Order, Invoices... API Gateway sẽ thực hiện request đồng thời tới các thành phần, lấy về các thông tin từ từng thành phần, ghép lại và phản hồi lại kết quả mong muốn cho Client => giải quyết vấn đề không đồng nhất.   
+    	- Che dấu được cấu trúc của hệ thống microservices với bên ngoài.   
+    	- Dễ dàng theo dõi và quản lý traffic: Hầu hết các hệ thống API gateway phổ biến hiện nay đều sẽ đi kèm tính năng theo dõi và quản lý lượng traffic bằng GUI hoặc thông qua các APIs của hệ thống Gateway, VD như với Kong (bản EE).   
+    	![](images/Kong.png)   
+    	- Ngắt kết nối API: Khi mỗi thành phần trong hệ thống dừng hoạt động, hoặc trả về số lượng lớn lỗi đạt đến ngưỡng đã được quy định, API Gateway có thể tự động thực hiện dừng gửi request tới thành phần gặp lỗi. Việc này sẽ cho đội vận hành có thời gian để phân tích log, xử lý lỗi và update lại thành phần.   
     	- Thêm một lớp bảo mật nữa cho hệ thống. 
-        API gateway giúp ngăn chặn các cuộc tấn công bằng cách thêm một lớp bảo vệ các loại tấn công như ddos, slq injections,... 
+        API gateway giúp ngăn chặn các cuộc tấn công bằng cách thêm một lớp bảo vệ các loại tấn công như ddos, slq injections,...   
 
     - __Nhược điểm của API Gateway__  
     	- Tăng thời gian response. 

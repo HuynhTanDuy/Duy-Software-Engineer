@@ -57,7 +57,7 @@ SOLID là viết tắt các các nguyên lý:
 	Có 3 dạng Dependency Injection:
 		- Constructor Injection ( phổ biến nhất)
 		- Setter Injection
-		- Interface Injection
+		- Interface Injection  
 	Nội dụng cụ thể về Dependency Injection sẽ được trình bày và áp dụng cụ thể hơn ở "Laravel Architecture concepts."
 
 6.	__Kết luận__

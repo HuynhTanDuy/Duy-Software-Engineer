@@ -3,8 +3,8 @@
 ![](images/service_container.png)
 
 1. __Service Container là gì ?__    
-	Service Container được mệnh danh là "trái tim" của Laravel. Một cách ngắn ngọn, đây là nơi quản lý class dependency và thực hiện dependency injection. 
-		- Nếu Class A hoạt động phụ thuộc vào một số class khác, ta sẽ khởi tạo instance của các class đó ở bên trong class A. Những instance đó được gọi là dependency. 
+	Service Container được mệnh danh là "trái tim" của Laravel. Một cách ngắn ngọn, đây là nơi quản lý class dependency và thực hiện dependency injection.    
+		- Nếu Class A hoạt động phụ thuộc vào một số class khác, ta sẽ khởi tạo instance của các class đó ở bên trong class A. Những instance đó được gọi là dependency.    
 		- Quá trình inject các instance đó vào class A thông qua Constructor hoặc Setter chính là Dependency injection. 
 
 2. __Service Container hoạt động như thế nào ?__ 
@@ -27,7 +27,7 @@
     $computer = app('Computer');
     ```
 
-    __Quy trình thực hiện:__   
+    -__Quy trình thực hiện:__    
     	- Khởi tạo class Computer với các dependency của nó.  
     	- *app()->bind('computer', 'Computer');* => đăng ký instance của class Computer bằng cái tên 'computer'.  
     	- *$computer = app('computer');* . Đây là lúc ta resolve instance của class Computer đã đăng ký với Service Container trước đó.  
